@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>String Object Example</title>
+</head>
+<body>
+  <script>
+    // Creating a string
+    var greeting = "Hello, world!";
+    
+    // Accessing characters in a string
+    console.log(greeting[0]); // Output: "H"
+    console.log(greeting.charAt(7)); // Output: "w"
+    
+    // String length
+    console.log("Length:", greeting.length); // Output: 13
+    
+    // Concatenation
+    var name = "Alice";
+    var message = "Hi, " + name + "!"; // Output: "Hi, Alice!"
+    
+    // String methods
+    var sentence = "   This is a sample sentence.   ";
+    console.log(sentence.trim()); // Output: "This is a sample sentence."
+    console.log(sentence.toLowerCase()); // Output: "   this is a sample sentence.   "
+    console.log(sentence.toUpperCase()); // Output: "   THIS IS A SAMPLE SENTENCE.   "
+    console.log(sentence.indexOf("sample")); // Output: 11
+    
+    var replaced = sentence.replace("sample", "modified");
+    console.log(replaced); // Output: "   This is a modified sentence.   "
+    
+    // Substring
+    var portion = sentence.substring(8, 19); // Output: "a sample sen"
+    console.log(portion);
+    
+    // Splitting a string into an array
+    var words = sentence.split(" ");
+    console.log(words); // Output: ["", "", "", "This", "is", "a", "sample", "sentence.", "", "", ""]
+  </script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Object Examples</title>
+</head>
+<body>
+    <script>
+        // Create an empty object using object literal syntax
+        var emptyObject = {};
+
+        // Create an object with data
+        var person = {
+            firstName: "Binu",
+            lastName: "joshi",
+            age: 20,
+            isStudent: false
+        };
+
+        // Create another object
+        var address = {
+            street: "123 Mnr",
+            city: "Mahendranagar",
+            country: "Nepal"
+        };
+
+        // Add the 'address' object as a property to the 'person' object
+        person.address = address;
+
+        console.log("Empty Object:", emptyObject);
+        console.log("Person Object:", person);
+    </script>
+</body>
+</html>

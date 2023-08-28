@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Function Example</title>
+    <script>
+        // Define the function
+        function introduceMyself(name, age) {
+            return "Hello, my name is " + name + " and I am " + age + " years old.";
+        }
+
+        // Call the function and display the result
+        function displayIntroduction() {
+            var myName = "Binu";
+            var myAge = 20;
+
+            var introduction = introduceMyself(myName, myAge);
+            document.getElementById("output").textContent = introduction;
+        }
+    </script>
+</head>
+<body>
+    <h1>Function Example</h1>
+    <button onclick="displayIntroduction()">Click me to introduce myself</button>
+    <p id="output"></p>
+</body>
+</html>

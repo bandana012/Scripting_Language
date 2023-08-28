@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Internal JavaScript Example</title>
+</head>
+<body>
+
+<h1>Internal JavaScript Example</h1>
+
+<p id="demo">This is a paragraph.</p>
+
+<button type="button" id="changeButton">Click me to change the paragraph content</button>
+
+<script>
+    // Internal JavaScript code
+    document.getElementById("changeButton").addEventListener("click", function() {
+        document.getElementById("demo").innerHTML = "Paragraph content changed!";
+    });
+</script>
+
+</body>
+</html>

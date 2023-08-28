@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Number Object Example</title>
+</head>
+<body>
+<h1>Number Object Example</h1>
+<p>This example demonstrates the usage of the Number object in JavaScript.</p>
+<script>
+  // Creating Number objects
+  var num1 = new Number(42);
+  var num2 = new Number(3.14);
+
+  // Displaying properties of Number objects
+  document.write("<p>num1: " + num1 + "</p>");
+  document.write("<p>num2: " + num2 + "</p>");
+
+  // Using Number methods
+  document.write("<p>num1 is finite: " + num1.isFinite() + "</p>");
+  document.write("<p>num2 is finite: " + num2.isFinite() + "</p>");
+
+  document.write("<p>num1 is integer: " + num1.isInteger() + "</p>");
+  document.write("<p>num2 is integer: " + num2.isInteger() + "</p>");
+
+  // Converting Number objects to primitive values
+  var primitiveNum1 = num1.valueOf();
+  var primitiveNum2 = num2.valueOf();
+
+  document.write("<p>Primitive num1: " + primitiveNum1 + "</p>");
+  document.write("<p>Primitive num2: " + primitiveNum2 + "</p>");
+
+  // Using Number methods directly on literals
+  document.write("<p>5 is finite: " + Number.isFinite(5) + "</p>");
+  document.write("<p>3.14 is integer: " + Number.isInteger(3.14) + "</p>");
+
+  // Parsing numeric strings
+  var numericString = "123.45";
+  var parsedNumber = Number.parseFloat(numericString);
+  document.write("<p>Parsed number: " + parsedNumber + "</p>");
+</script>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Boolean Object Example</title>
+</head>
+<body>
+    <script>
+        // Creating Boolean objects
+        var boolObjTrue = new Boolean(true);
+        var boolObjFalse = new Boolean(false);
+
+        // Displaying the values and types of Boolean objects
+        console.log("boolObjTrue: " + boolObjTrue);
+        console.log("Type of boolObjTrue: " + typeof boolObjTrue);
+        console.log("boolObjFalse: " + boolObjFalse);
+        console.log("Type of boolObjFalse: " + typeof boolObjFalse);
+
+        // Using Boolean object methods
+        console.log("boolObjTrue.valueOf(): " + boolObjTrue.valueOf());
+        console.log("boolObjTrue.toString(): " + boolObjTrue.toString());
+
+        // Converting Boolean objects to primitive boolean values
+        var primitiveTrue = boolObjTrue.valueOf();
+        var primitiveFalse = boolObjFalse.valueOf();
+
+        console.log("Primitive true value: " + primitiveTrue);
+        console.log("Primitive false value: " + primitiveFalse);
+
+        // Comparing Boolean objects and primitive boolean values
+        console.log("boolObjTrue === primitiveTrue: " + (boolObjTrue === primitiveTrue));
+        console.log("boolObjFalse == primitiveFalse: " + (boolObjFalse == primitiveFalse));
+    </script>
+</body>
+</html>

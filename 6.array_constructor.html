@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Array Constructor Example</title>
+</head>
+<body>
+  <script>
+    // Create a new array using the array constructor
+    var namesArray = new Array("Jinu", "Jane", "Sarita", "Minu", "Binu");
+
+    // Check if the array includes "Sarita" and "Binu"
+    var includesSarita = namesArray.includes("Sarita");
+    var includesBinu = namesArray.includes("Binu");
+
+    // Display the results
+    if (includesSarita) {
+      document.write("The array includes Sarita.<br>");
+    } else {
+      document.write("The array does not include Sarita.<br>");
+    }
+
+    if (includesBinu) {
+      document.write("The array includes Binu.<br>");
+    } else {
+      document.write("The array does not include Binu.<br>");
+    }
+  </script>
+</body>
+</html>
